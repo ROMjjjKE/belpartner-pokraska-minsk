@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Подбор цвета краски: код по VIN, выкраска, сложные пигменты</title>
+<meta name="description" content="Как подбирается цвет кузова: код краски, выкраска, коррекция колера, сложность металлика и перламутра.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=PT+Root+UI:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body id="top">
+<a class="skip" href="#main">К содержанию</a>
+<header class="top"><div class="wrap in">
+  <a class="brand" href="index.html"><b>Белпартнёргрупп</b><span>покраска кузова · Минск</span></a>
+  <nav class="nav" id="nav"><a href="index.html">Главная</a><a href="elements.html">Элементы</a><a href="process.html">Технология</a><a href="color.html" class="on">Цвет</a><a href="kontakty.html">Контакты</a></nav>
+  <a class="top__tel" href="tel:+375296580818">+375 (29) 658-08-18</a>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+</div></header>
+<main id="main"><section class="sec"><div class="wrap">
+  <span class="micro">Цвет</span>
+  <h1 style="margin:12px 0 14px">Почему «по фото не подобрать»</h1>
+  <p class="lead">Оттенок зависит от трёх вещей: типа пигмента, освещения и угла. Один и тот же код краски на солнце, в цеху и под фонарём выглядит по-разному. Поэтому мы не подбираем цвет по снимку с телефона.</p>
+  <div style="margin-top:28px"><div class="paint fx">
+  <div class="paint__stage grid-bg">
+    <span class="paint__tag">Схема · цвет и финиш</span>
+    <svg viewBox="0 0 460 220" role="img" aria-label="Схема автомобиля">
+  <defs>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".45" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".18"/>
+    </linearGradient>
+    <clipPath id="carClip">
+      <path d="M30,155 C30,120 55,100 95,96 L180,90 C230,88 300,92 340,104 L395,124 C410,130 415,140 415,152 L415,160 C415,166 411,170 405,170 L40,170 C33,170 30,166 30,160 Z"/>
+    </clipPath>
+  </defs>
+  <path id="bodyPaint" d="M30,155 C30,120 55,100 95,96 L180,90 C230,88 300,92 340,104 L395,124 C410,130 415,140 415,152 L415,160 C415,166 411,170 405,170 L40,170 C33,170 30,166 30,160 Z" fill="#1C1F22" stroke="rgba(22,24,26,.35)" stroke-width="1"/>
+  <g clip-path="url(#carClip)"><path id="glossLayer" d="M30,150 C60,128 120,112 200,110 C290,108 360,120 415,140 L415,120 L30,120 Z" fill="url(#gloss)" opacity=".35"/></g>
+  <path d="M120,97 L186,92 L186,122 L112,122 Z" fill="#DDE3E8" stroke="rgba(22,24,26,.25)"/>
+  <path d="M202,92 L292,96 L312,122 L202,122 Z" fill="#DDE3E8" stroke="rgba(22,24,26,.25)"/>
+  <rect x="404" y="132" width="14" height="9" rx="3" fill="#F2E9C9" stroke="rgba(22,24,26,.25)"/>
+  <circle cx="112" cy="170" r="23" fill="#2A2E33"/><circle cx="112" cy="170" r="11" fill="#B9BFC5"/>
+  <circle cx="332" cy="170" r="23" fill="#2A2E33"/><circle cx="332" cy="170" r="11" fill="#B9BFC5"/>
+  <line x1="30" y1="196" x2="415" y2="196" stroke="rgba(22,24,26,.18)" stroke-dasharray="4 5"/>
+</svg>
+  </div>
+  <div class="paint__side">
+    <div><span class="micro" style="margin-bottom:8px">Оттенок</span><div class="sw" id="sw"><button type="button" data-c="#1C1F22" data-n="Чёрный металлик" data-k="met" style="background:#1C1F22" aria-pressed="true" aria-label="Чёрный металлик"></button><button type="button" data-c="#F1F0EA" data-n="Белый перламутр" data-k="pearl" style="background:#F1F0EA" aria-label="Белый перламутр"></button><button type="button" data-c="#B7BCC2" data-n="Серебристый" data-k="met" style="background:#B7BCC2" aria-label="Серебристый"></button><button type="button" data-c="#1E3C6B" data-n="Синий металлик" data-k="met" style="background:#1E3C6B" aria-label="Синий металлик"></button><button type="button" data-c="#8E1F26" data-n="Красный" data-k="sol" style="background:#8E1F26" aria-label="Красный"></button><button type="button" data-c="#3B4A38" data-n="Хаки" data-k="sol" style="background:#3B4A38" aria-label="Хаки"></button></div></div>
+    <div><span class="micro" style="margin-bottom:8px">Финиш</span><div class="finish" id="finish">
+      <button type="button" data-f="gloss" aria-pressed="true">Глянец</button>
+      <button type="button" data-f="matte" aria-pressed="false">Мат</button></div></div>
+    <div class="paint__read"><b id="pRead">Чёрный металлик · глянец</b><span id="pNote">Металлик даёт глубину и «искру» под углом. Такой цвет сложнее: нужна выкраска и сравнение под лампой, иначе на солнце видно переход.</span></div>
+  </div>
+</div></div>
+</div></section>
+
+<section class="sec sec--paper"><div class="wrap">
+  <div class="hed"><div><span class="micro">Как подбираем</span><h2>Три шага до первого слоя</h2></div><p>Ошибка в подборе видна не сразу, а через неделю на солнце. Поэтому тратим время до покраски.</p></div>
+  <div class="el">
+    <div class="el__row"><span class="el__n">01</span><b>Код краски</b><span>Берём по VIN или по шильдику на кузове. Если код перекрашивался раньше — это видно по толщиномеру и оттенку</span><span class="mark">источник</span></div>
+    <div class="el__row"><span class="el__n">02</span><b>Выкраска</b><span>Готовим пробный напыл на пластине и сравниваем с деталью кузова под лампой и на улице</span><span class="mark">проверка</span></div>
+    <div class="el__row"><span class="el__n">03</span><b>Коррекция</b><span>Если оттенок «уходит» — доводим колер вручную, добавляя пигмент малыми порциями</span><span class="mark">доводка</span></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="hed"><div><span class="micro">Сложность</span><h2>Чего ждать от разных красок</h2></div><p>Чем «умнее» пигмент, тем выше требования к подбору и условиям нанесения.</p></div>
+  <div class="spec">
+    <div class="spec__row"><span>Солид</span><span>Простой однородный цвет. Проще всего попасть, меньше всего видно переходы</span></div>
+    <div class="spec__row"><span>Металлик</span><span>«Искра» под углом: чем крупнее зерно, тем заметнее разница при боковом свете</span></div>
+    <div class="spec__row"><span>Перламутр</span><span>Меняет оттенок по углу. Требует выкраски и одинакового числа слоёв базы</span></div>
+    <div class="spec__row"><span>Мат и сатин</span><span>Не полируется: любая неровность подготовки остаётся видимой, зато нет блика</span></div>
+    <div class="spec__row"><span>Трёхслойные</span><span>Цвет + промежуточный слой + лак. Самые сложные: слой считают, а не «льют на глаз»</span></div>
+  </div>
+</div></section>
+
+<section class="sec sec--paper"><div class="wrap"><div class="cta">
+  <div><h2>Скажите код краски — посчитаем</h2><p>Код есть в сервисной книжке, на шильдике под капотом или в VIN. С ним разговор сразу предметный.</p></div>
+  <div class="cta__b"><a class="btn btn--light" href="tel:+375296580818">+375 (29) 658-08-18</a><a class="btn btn--ghost" href="kontakty.html">Заявка</a></div>
+</div></div></section></main>
+<footer class="foot"><div class="wrap">
+  <div class="foot__grid">
+    <div><b>ООО «Белпартнёргрупп»</b><p>Ремонт и покраска кузовных элементов в Минске. Работаем со снятыми деталями и с автомобилем целиком.</p></div>
+    <div><span class="micro">Страницы</span><a href="index.html">Главная</a><a href="elements.html">Элементы</a><a href="process.html">Технология</a><a href="color.html">Цвет</a><a href="kontakty.html">Контакты</a></div>
+    <div><span class="micro">Связь</span><a href="tel:+375296580818">+375 (29) 658-08-18</a><span>Минск</span><span>по предварительной записи</span></div>
+  </div>
+  <div class="foot__bot"><span>© <span id="yr">2026</span> ООО «Белпартнёргрупп»</span><span>Макет: SiteFast.by</span></div>
+</div></footer>
+<div class="wm">SiteFast.by</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
