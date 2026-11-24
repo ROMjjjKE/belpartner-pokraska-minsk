@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Покраска и ремонт кузовных элементов в Минске — ООО «Белпартнёргрупп»</title>
+<meta name="description" content="Ремонт бампера, подготовка к покраске и окрас снятых элементов кузова: бампер, крыло, капот, дверь, крышка багажника. Минск.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=PT+Root+UI:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body id="top">
+<a class="skip" href="#main">К содержанию</a>
+<header class="top"><div class="wrap in">
+  <a class="brand" href="index.html"><b>Белпартнёргрупп</b><span>покраска кузова · Минск</span></a>
+  <nav class="nav" id="nav"><a href="index.html" class="on">Главная</a><a href="elements.html">Элементы</a><a href="process.html">Технология</a><a href="color.html">Цвет</a><a href="kontakty.html">Контакты</a></nav>
+  <a class="top__tel" href="tel:+375296580818">+375 (29) 658-08-18</a>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+</div></header>
+<main id="main"><section class="sec" id="paint"><div class="wrap">
+  <div class="hed">
+    <div><span class="micro">Цвет</span><h2>Примерить оттенок и финиш</h2></div>
+    <p>Это не «конфигуратор цвета». Это способ показать, почему покраска по фотографии не работает: оттенок зависит от света, угла и типа пигмента.</p>
+  </div>
+  <div class="paint fx">
+  <div class="paint__stage grid-bg">
+    <span class="paint__tag">Схема · цвет и финиш</span>
+    <svg viewBox="0 0 460 220" role="img" aria-label="Схема автомобиля">
+  <defs>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".45" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".18"/>
+    </linearGradient>
+    <clipPath id="carClip">
+      <path d="M30,155 C30,120 55,100 95,96 L180,90 C230,88 300,92 340,104 L395,124 C410,130 415,140 415,152 L415,160 C415,166 411,170 405,170 L40,170 C33,170 30,166 30,160 Z"/>
+    </clipPath>
+  </defs>
+  <path id="bodyPaint" d="M30,155 C30,120 55,100 95,96 L180,90 C230,88 300,92 340,104 L395,124 C410,130 415,140 415,152 L415,160 C415,166 411,170 405,170 L40,170 C33,170 30,166 30,160 Z" fill="#1C1F22" stroke="rgba(22,24,26,.35)" stroke-width="1"/>
+  <g clip-path="url(#carClip)"><path id="glossLayer" d="M30,150 C60,128 120,112 200,110 C290,108 360,120 415,140 L415,120 L30,120 Z" fill="url(#gloss)" opacity=".35"/></g>
+  <path d="M120,97 L186,92 L186,122 L112,122 Z" fill="#DDE3E8" stroke="rgba(22,24,26,.25)"/>
+  <path d="M202,92 L292,96 L312,122 L202,122 Z" fill="#DDE3E8" stroke="rgba(22,24,26,.25)"/>
+  <rect x="404" y="132" width="14" height="9" rx="3" fill="#F2E9C9" stroke="rgba(22,24,26,.25)"/>
+  <circle cx="112" cy="170" r="23" fill="#2A2E33"/><circle cx="112" cy="170" r="11" fill="#B9BFC5"/>
+  <circle cx="332" cy="170" r="23" fill="#2A2E33"/><circle cx="332" cy="170" r="11" fill="#B9BFC5"/>
+  <line x1="30" y1="196" x2="415" y2="196" stroke="rgba(22,24,26,.18)" stroke-dasharray="4 5"/>
+</svg>
+  </div>
+  <div class="paint__side">
+    <div><span class="micro" style="margin-bottom:8px">Оттенок</span><div class="sw" id="sw"><button type="button" data-c="#1C1F22" data-n="Чёрный металлик" data-k="met" style="background:#1C1F22" aria-pressed="true" aria-label="Чёрный металлик"></button><button type="button" data-c="#F1F0EA" data-n="Белый перламутр" data-k="pearl" style="background:#F1F0EA" aria-label="Белый перламутр"></button><button type="button" data-c="#B7BCC2" data-n="Серебристый" data-k="met" style="background:#B7BCC2" aria-label="Серебристый"></button><button type="button" data-c="#1E3C6B" data-n="Синий металлик" data-k="met" style="background:#1E3C6B" aria-label="Синий металлик"></button><button type="button" data-c="#8E1F26" data-n="Красный" data-k="sol" style="background:#8E1F26" aria-label="Красный"></button><button type="button" data-c="#3B4A38" data-n="Хаки" data-k="sol" style="background:#3B4A38" aria-label="Хаки"></button></div></div>
+    <div><span class="micro" style="margin-bottom:8px">Финиш</span><div class="finish" id="finish">
+      <button type="button" data-f="gloss" aria-pressed="true">Глянец</button>
+      <button type="button" data-f="matte" aria-pressed="false">Мат</button></div></div>
+    <div class="paint__read"><b id="pRead">Чёрный металлик · глянец</b><span id="pNote">Металлик даёт глубину и «искру» под углом. Такой цвет сложнее: нужна выкраска и сравнение под лампой, иначе на солнце видно переход.</span></div>
+  </div>
+</div>
+</div></section>
+
+<section class="sec sec--paper"><div class="wrap">
+  <div class="hed">
+    <div><span class="micro">Элементы</span><h2>Что красим и что с этим делаем</h2></div>
+    <p>Пять позиций, которые приходят чаще всего. Если деталь не в списке — всё равно спросите: красим кузовные элементы и пластик.</p>
+  </div>
+  <div class="el"><div class="el__row"><span class="el__n">01</span><b>Бампер</b><span>Ремонт трещин, восстановление креплений, покраска в цвет кузова</span><span class="mark">ремонт + окрас</span></div><div class="el__row"><span class="el__n">02</span><b>Крыло</b><span>Подготовка, антикоррозийная защита кромки, окрас</span><span class="mark">окрас</span></div><div class="el__row"><span class="el__n">03</span><b>Капот</b><span>Шлифовка, грунт, окрас; при сколах — локальный ремонт</span><span class="mark">окрас</span></div><div class="el__row"><span class="el__n">04</span><b>Дверь</b><span>Окрас с разбором: ручки, молдинги, стекло — снимаем</span><span class="mark">окрас</span></div><div class="el__row"><span class="el__n">05</span><b>Крышка багажника</b><span>Окрас и восстановление кромки, где чаще всего ржавеет</span><span class="mark">окрас</span></div></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px">
+    <a class="btn btn--dark" href="elements.html">Подробно по элементам</a>
+    <a class="btn" style="border-color:var(--line)" href="process.html">Как проходит покраска</a>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="hed"><div><span class="micro">Порядок</span><h2>Пять этапов от детали до сборки</h2></div>
+  <p>Каждый этап виден и объясним: если деталь была битая, вы увидите, где шпатлёвка, а где металл.</p></div>
+  <div class="steps">
+    <div class="step"><b>01 · Разбор</b><span>Снимаем ручки, молдинги, стекло, уплотнители. Красим элемент, а не «вокруг».</span></div>
+    <div class="step"><b>02 · Подготовка</b><span>Мойка, обезжиривание, шлифовка, шпатлёвка и выравнивание плоскости.</span></div>
+    <div class="step"><b>03 · Грунт</b><span>Грунт-наполнитель, сушка, матирование. Основа для базы.</span></div>
+    <div class="step"><b>04 · База и лак</b><span>Подбор по коду, база в 2–3 слоя, лак с защитой от УФ.</span></div>
+    <div class="step"><b>05 · Сборка</b><span>Сушка, полировка, сборка, контроль зазоров и оттенка на свету.</span></div>
+  </div>
+</div></section>
+
+<section class="sec sec--paper"><div class="wrap">
+  <div class="hed"><div><span class="micro">Вопросы</span><h2>Коротко о главном</h2></div><p>Если чего-то нет в списке — позвоните, ответим без «приезжайте, посмотрим».</p></div>
+  <div class="qa">
+    <details><summary>Можно ли покрасить только один элемент?</summary><p>Да, это основной формат работы: привозите снятый бампер, крыло или дверь. При частичной покраске на автомобиле показываем, как будет выглядеть переход.</p></details>
+    <details><summary>Попадёте ли в цвет?</summary><p>Подбираем по коду краски и проверяем выкраской под лампой. На металлике и перламутре всегда есть допуск: даже заводские детали из разных партий отличаются.</p></details>
+    <details><summary>Сколько сохнет?</summary><p>Зависит от лака и температуры в камере. Точный срок называем после осмотра детали, потому что он зависит от объёма ремонта.</p></details>
+    <details><summary>Красите пластик и неоригинальные детали?</summary><p>Да, с правильным грунтом по пластику. Неоригинальные детали часто требуют больше подготовки — об этом скажем заранее.</p></details>
+    <details><summary>Работаете с юрлицами?</summary><p>Да, ООО работает по договору. Условия и закрывающие документы обсуждаем при заказе.</p></details>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap"><div class="cta">
+  <div><h2>Пришлите фото детали — назовём вилку</h2><p>По фото видно характер повреждения: трещина, скол, вмятина или просто выгоревший лак. Этого достаточно, чтобы назвать порядок цены.</p></div>
+  <div class="cta__b"><a class="btn btn--light" href="tel:+375296580818">+375 (29) 658-08-18</a><a class="btn btn--ghost" href="kontakty.html">Оставить заявку</a></div>
+</div></div></section></main>
+<footer class="foot"><div class="wrap">
+  <div class="foot__grid">
+    <div><b>ООО «Белпартнёргрупп»</b><p>Ремонт и покраска кузовных элементов в Минске. Работаем со снятыми деталями и с автомобилем целиком.</p></div>
+    <div><span class="micro">Страницы</span><a href="index.html">Главная</a><a href="elements.html">Элементы</a><a href="process.html">Технология</a><a href="color.html">Цвет</a><a href="kontakty.html">Контакты</a></div>
+    <div><span class="micro">Связь</span><a href="tel:+375296580818">+375 (29) 658-08-18</a><span>Минск</span><span>по предварительной записи</span></div>
+  </div>
+  <div class="foot__bot"><span>© <span id="yr">2026</span> ООО «Белпартнёргрупп»</span><span>Макет: SiteFast.by</span></div>
+</div></footer>
+<div class="wm">SiteFast.by</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
